@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Order Details - Lenskart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:#1E1E1E;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 25px;
+      padding: 80px;
+      margin-left: 400px;
+      width: 500px;
+      margin-top: 100px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .order-details {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .order-details span {
+      font-weight: bold;
+    }
+
+    .order-item {
+      border-top: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    .order-item:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .order-item .product-image {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .order-item .product-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .order-item .product-price {
+      color: #888;
+    }
+
+    .total {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .total span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Order Details</h1>
+
+    <div class="order-details">
+      <span>Order ID:</span>
+      <span>12345</span>
+    </div>
+
+    <div class="order-details">
+      <span>Date:</span>
+      <span>June 1, 2023</span>
+    </div>
+
+    <div class="order-details">
+      <span>Customer:</span>
+      <span>John Doe</span>
+    </div>
+
+    <div class="order-details">
+      <span>Shipping Address:</span>
+      <span>123 Main St, City, Country</span>
+    </div>
+
+    <div class="order-item">
+      <img src="sunglassimg.png" alt="Product 1" class="product-image">
+    </div>
+    <div class="total">
+      <span>Total:</span>
+      <span>Rs5000.00</span>
+    </div>
+
+    <div class="return-link">
+      <a href="homepage.html">&lt;&lt; Return to Home</a>
+  </div>
+  </div>
+</body>
+</html>

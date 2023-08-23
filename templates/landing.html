@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LENSLAB</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='/css/landing.css') }}"
+    />
+    <style>
+      /* Additional CSS for the quote animation */
+      .quote-container {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: larger;
+        animation: slideInFromBottom 3s forwards;
+      }
+
+      @keyframes slideInFromBottom {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <h2>Discover the Perfect Lenses</h2>
+      <a href="/home" class="cta">Get Started</a>
+    </section>
+    <div class="background-text">
+      <h1>LENSLAB</h1>
+    </div>
+    <div class="quote-container">
+      <p class="quote">
+        "Wearing glasses doesn't just improve your vision; it enhances your
+        perception of the world."
+      </p>
+    </div>
+  </body>
+</html>
